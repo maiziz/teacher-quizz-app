@@ -7,13 +7,15 @@ import { QuizList } from './quiz-list';
 import { PerformanceChart } from '../charts/performance-chart';
 import { MessagingPanel } from '../messaging/messaging-panel';
 import { Calendar as CalendarComponent } from '../ui/calendar';
+import { useRouter } from 'next/navigation';
 
 export function TeacherDashboard() {
+  const router = useRouter();
   return (
     <div className="grid gap-6">
       <div className="flex justify-between items-center">
         <h1 className="text-3xl font-bold">Teacher Dashboard</h1>
-        <Button>
+        <Button onClick={() => router.push('/teacher/create-quiz')}>
           <PlusCircle className="mr-2 h-4 w-4" />
           Create Quiz
         </Button>
