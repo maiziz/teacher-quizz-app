@@ -1,4 +1,3 @@
 {
-  "/page": "app/page.js",
   "/teacher/create-quiz/page": "app/teacher/create-quiz/page.js"
 }
